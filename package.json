@@ -1,0 +1,26 @@
+{
+  "name": "multisweeper",
+  "license": "GPLv3",
+  "author": "Lieuwe Rooijakkers",
+  "nodejs": true,
+  "single-instance": true,
+  "keywords": [],
+  "window": {
+    "title": "NodeMultiSweeper",
+    "height": 480,
+    "width": 640,
+    "toolbar": false
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "appjs-win32": "0.0.19",
+    "coffee-script": "^1.8.0",
+    "lodash": "^2.4.1",
+    "node-persist": "0.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "content/serverList.html",
+  "description": "A node.js client for MultiSweeper."
+}

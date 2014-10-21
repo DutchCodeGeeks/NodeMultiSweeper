@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="../lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../lib/main.js"></script>
+
+		<title>NodeMultiSweeper</title>
+
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			table {
+				border-spacing: 0px;
+				border-collapse: collapse;
+
+				position: absolute;
+				top: 15px;
+				left: 35px;
+
+				opacity: .7;
+			}
+
+			td {
+				border: 1px #000 solid;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+
+				color: black;
+				text-align: center;
+			}
+
+			td:hover {
+				background-color: lightgray;
+			}
+
+			td.known {
+				background-color: gray;
+				color: white;
+				cursor: default;
+			}
+
+			td.known.bomb {
+				background-color: red;
+				color: white;
+				cursor: default;
+			}
+
+			td.known.lastChanged {
+				background-color: #477F7F !important;
+				color: white;
+				cursor: default;
+			}
+
+			div#head {
+				position: absolute;
+				right: 35px;
+				top: 5px;
+
+				font-size: 25px;
+			}
+
+			div#playerList {
+				border-top: 1px gray solid;
+				width: 250px;
+				height: 350px;
+
+				overflow-x: hidden;
+				overflow-y: auto;
+
+				position: absolute;
+				right: 35px;
+				top: 35px;
+			}
+
+			div#playerList > div {
+				padding: 5px;
+				font-size: 20px;
+				transition: .25s background-color ease-in-out;
+			}
+
+			div#playerList > div.onMove {
+				background-color: cyan !important;
+			}
+
+			div#bombCount {
+				position: absolute;
+				bottom: 25px;
+				right: 35px;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<tbody>
+			</tbody>
+		</table>
+
+		<div id="head">Players</div>
+		<div id="playerList">
+		</div>
+
+		<div id="bombCount">
+			0 bommetjes D:
+		</div>
+	</body>
+</html>
