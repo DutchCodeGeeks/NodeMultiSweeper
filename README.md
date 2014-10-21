@@ -1,4 +1,4 @@
 NodeMultiSweeper
 ================
 
-A MultiSweeper client geschreven in Node-Webkit.
+A MultiSweeper client written in Node-Webkit.
